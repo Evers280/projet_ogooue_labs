@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités | Ogooué Labs</title>
+    <meta name="description" content="Découvrez les dernières actualités et événements d'Ogooué Labs et de ses programmes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="actualites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (même structure que les autres pages) -->
+    <header class="header">
+        <!-- Contenu du header -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content text-center">
+                    <h1>Actualités</h1>
+                    <p>Restez informé des dernières nouvelles et événements d'Ogooué Labs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured News Section -->
+        <section class="featured-news">
+            <div class="container">
+                <div class="featured-news-grid">
+                    <div class="featured-news-main">
+                        <div class="featured-news-image">
+                            <img src="images/placeholder.svg" alt="Lancement de la nouvelle promotion">
+                        </div>
+                        <div class="featured-news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Événement</span>
+                                <span class="news-date">15 septembre 2023</span>
+                            </div>
+                            <h2>Lancement de la nouvelle promotion d'École 241</h2>
+                            <p>Ogooué Labs a officiellement lancé la nouvelle promotion d'École 241, accueillant 100 nouveaux apprenants qui seront formés aux métiers du développement web et mobile.</p>
+                            <a href="actualites/lancement-promotion-2023.html" class="btn btn-primary">
+                                Lire la suite
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="featured-news-secondary">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="images/placeholder.svg" alt="Partenariat avec Microsoft">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-category">Partenariat</span>
+                                    <span class="news-date">10 septembre 2023</span>
+                                </div>
+                                <h3>Nouveau partenariat avec Microsoft pour la formation</h3>
+                                <a href="actualites/partenariat-microsoft.html" class="news-link">
+                                    Lire la suite
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="images/placeholder.svg" alt="Hackathon Innovation">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-category">Événement</span>
+                                    <span class="news-date">5 septembre 2023</span>
+                                </div>
+                                <h3>Hackathon Innovation : 48h pour créer le futur</h3>
+                                <a href="actualites/hackathon-innovation.html" class="news-link">
+                                    Lire la suite
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid Section -->
+        <section class="news-grid-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Toutes les actualités</h2>
+                </div>
+                <div class="news-filters">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Tous</button>
+                        <button class="filter-btn" data-filter="evenement">Événements</button>
+                        <button class="filter-btn" data-filter="partenariat">Partenariats</button>
+                        <button class="filter-btn" data-filter="formation">Formations</button>
+                        <button class="filter-btn" data-filter="success">Success Stories</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Rechercher..." id="newsSearch">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <div class="news-card" data-category="evenement">
+                        <div class="news-image">
+                            <img src="images/placeholder.svg" alt="Lancement de la nouvelle promotion">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Événement</span>
+                                <span class="news-date">15 septembre 2023</span>
+                            </div>
+                            <h3>Lancement de la nouvelle promotion d'École 241</h3>
+                            <p>Ogooué Labs a officiellement lancé la nouvelle promotion d'École 241, accueillant 100 nouveaux apprenants.</p>
+                            <a href="actualites/lancement-promotion-2023.html" class="news-link">
+                                Lire la suite
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-card" data-category="partenariat">
+                        <div class="news-image">
+                            <img src="images/placeholder.svg" alt="Partenariat avec Microsoft">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Partenariat</span>
+                                <span class="news-date">10 septembre 2023</span>
+                            </div>
+                            <h3>Nouveau partenariat avec Microsoft pour la formation</h3>
+                            <p>Ogooué Labs et Microsoft s'associent pour offrir des formations certifiantes aux apprenants d'École 241.</p>
+                            <a href="actualites/partenariat-microsoft.html" class="news-link">
+                                Lire la suite
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-card" data-category="evenement">
+                        <div class="news-image">
+                            <img src="images/placeholder.svg" alt="Hackathon Innovation">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Événement</span>
+                                <span class="news-date">5 septembre 2023</span>
+                            </div>
+                            <h3>Hackathon Innovation : 48h pour créer le futur</h3>
+                            <p>Un hackathon de 48h réunissant plus de 50 participants pour développer des solutions innovantes.</p>
+                            <a href="actualites/hackathon-innovation.html" class="news-link">
+                                Lire la suite
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-card" data-category="formation">
+                        <div class="news-image">
+                            <img src="images/placeholder.svg" alt="Nouvelle formation IA">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Formation</span>
+                                <span class="news-date">1 septembre 2023</span>
+                            </div>
+                            <h3>Lancement d'une nouvelle formation en Intelligence Artificielle</h3>
+                            <p>École 241 élargit son offre de formation avec un nouveau programme dédié à l'Intelligence Artificielle.</p>
+                            <a href="actualites/formation-ia.html" class="news-link">
+                                Lire la suite
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-card" data-category="success">
+                        <div class="news-image">
+                            <img src="images/placeholder.svg" alt="Success Story Marie">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Success Story</span>
+                                <span class="news-date">25 août 2023</span>
+                            </div>
+                            <h3>Marie Koumba : de l'apprentissage à la direction technique</h3>
+                            <p>Découvrez le parcours inspirant de Marie, diplômée d'École 241, aujourd'hui directrice technique.</p>
+                            <a href="actualites/success-story-marie.html" class="news-link">
+                                Lire la suite
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-card" data-category="partenariat">
+                        <div class="news-image">
+                            <img src="images/placeholder.svg" alt="Partenariat Orange">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Partenariat</span>
+                                <span class="news-date">20 août 2023</span>
+                            </div>
+                            <h3>Orange Digital Center et Ogooué Labs s'associent pour l'inclusion numérique</h3>
+                            <p>Un nouveau partenariat pour favoriser l'inclusion numérique des jeunes en Afrique centrale.</p>
+                            <a href="actualites/partenariat-orange.html" class="news-link">
+                                Lire la suite
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="pagination-btn active">1</a>
+                    <a href="#" class="pagination-btn">2</a>
+                    <a href="#" class="pagination-btn">3</a>
+                    <span class="pagination-separator">...</span>
+                    <a href="#" class="pagination-btn">10</a>
+                    <a href="#" class="pagination-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Restez informé</h2>
+                    <p>Abonnez-vous à notre newsletter pour recevoir nos dernières actualités.</p>
+                    <form class="newsletter-form-large" action="api/newsletter.php" method="POST">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre adresse email" required>
+                            <button type="submit" class="btn btn-secondary">S'abonner</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (même structure que les autres pages) -->
+    <footer class="footer">
+        <!-- Contenu du footer -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Filtrage des actualités
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const newsCards = document.querySelectorAll('.news-grid .news-card');
+            const searchInput = document.getElementById('newsSearch');
+            
+            // Filtrage par catégorie
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Activer le bouton cliqué
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filtrer les actualités
+                    newsCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Recherche
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                newsCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const content = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
